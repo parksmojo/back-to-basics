@@ -11,19 +11,25 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector("nav");
+        nav.classList.toggle("open");
+      }
+    </script>
   </head>
   <body>
     <main>
       <header>
-        <div class="left">
-          <img src="./assets/logo.jpg" alt="Logo" height="50px" />
-          <nav>
-            <a href="#">Ducks</a>
-            <a href="#">Sharks</a>
-            <a href="#">Dinosaurs</a>
-          </nav>
-        </div>
-        <i class="material-icons">menu</i>
+        <img src="./assets/logo.jpg" alt="Logo" height="50px" />
+        <nav>
+          <a href="#">Ducks</a>
+          <a href="#">Sharks</a>
+          <a href="#">Dinosaurs</a>
+        </nav>
+        <a onclick="toggleMenu()">
+          <i class="material-icons">menu</i>
+        </a>
       </header>
 
       <section id="hero">

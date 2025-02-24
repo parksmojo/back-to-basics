@@ -10,24 +10,22 @@ header {
   padding: 1rem;
   align-items: center;
 
-  .left {
-    display: flex;
+  nav {
+    /* display: flex;
     align-items: center;
-    justify-content: space-around;
+    margin-left: 1rem; */
+    display: none;
+    &.open {
+      display: block;
+    }
 
-    nav {
-      display: flex;
-      align-items: center;
+    a {
       margin-left: 1rem;
-
-      a {
-        margin-left: 1rem;
-        color: #fff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   }
 
@@ -40,12 +38,11 @@ header {
 #hero {
   overflow: hidden;
 
-  .hero-content {
+  /* .hero-content {
     position: absolute;
     top: 35%;
     left: 5%;
     width: 35%;
-    /* transform: translateY(-90%); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,11 +51,11 @@ header {
     box-sizing: border-box;
 
     h2 {
-      color: #fff; /* Text color */
+      color: #fff; 
       text-align: center;
-      width: 100%; /* Ensure the text takes the full width of the container */
+      width: 100%; 
     }
-  }
+  } */
 
   img {
     width: 100%;
