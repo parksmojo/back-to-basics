@@ -60,25 +60,25 @@ header {
 
 #hero {
   overflow: hidden;
+  position: relative;
 
-  /* .hero-content {
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 35%;
-    left: 5%;
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(51, 51, 51, 0.7);
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
     padding: 1rem;
-    box-sizing: border-box;
+    height: 10%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 
     h2 {
-      color: #fff; 
+      color: #fff;
       text-align: center;
-      width: 100%; 
     }
-  } */
+  }
 
   img {
     width: 100%;
