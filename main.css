@@ -5,24 +5,22 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  display: flex;
-  justify-content: space-between;
   padding: 1rem;
-  align-items: center;
+  position: relative;
 
   nav {
-    /* display: flex;
-    align-items: center;
-    margin-left: 1rem; */
     display: none;
     &.open {
       display: block;
     }
 
     a {
-      margin-left: 1rem;
-      color: #fff;
+      background-color: #222;
+      color: white;
+      padding: 14px 16px;
       text-decoration: none;
+      font-size: 17px;
+      display: block;
     }
     a:hover {
       text-decoration: underline;
@@ -32,6 +30,31 @@ header {
   i {
     font-size: 2rem;
     cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 30px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    nav,
+    nav.open {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        background-color: #333;
+      }
+    }
+
+    a {
+      display: none;
+    }
   }
 }
 
